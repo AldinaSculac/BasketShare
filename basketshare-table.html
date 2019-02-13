@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BasketShare - Products</title>
+  
+<!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
+    
+   <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+<!--Tooltips-->    
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+  
+<!--Boostrap-->    
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+<!--Tooltips script-->     
+   <script>
+        $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
+<!--CUSTOM CSS-->
+   <link rel="stylesheet" type="text/css" href="basketshare.css"  />
+    
+</head>
+
+<body>   
+    
+<!-- menu bar -->    
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="basketshare-index.html">
+    <img src="images/BasketShareLogo.svg" width="200" alt="BaskeShare logo" />
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item"><a class="nav-link" href="basketshare-index.html">How to start with BasketShare?</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li class="nav-item icon"><a href="basketshare-basket.html"><img src="images/in-basket-24px.svg" alt="Your Basket" /></a></li>
+      <li class="nav-item icon"><a href="basketshare-share.html"><img src="images/baseline-add_circle-24px.svg" alt="Share" /></a></li>       
+      <li class="nav-item icon"><img src="images/baseline-account_box-24px.svg" alt="Account" /></li>     
+    </ul>          
+    </div>
+ </nav>
+
+<!--Table--> 
+    <div class="container table-responsive"> 
+    <h2>Share food! Get food!</h2>  
+      
+    <!--Search-->
+    <table class="table">
+    <tr> 
+      <th><input class="form-control" id="" type="text" placeholder="Product"></th>
+      <th><input class="form-control" id="" type="text" placeholder="Category"></th>
+      <th><input class="form-control" id="" type="text" placeholder="Quantity"></th>
+      <th><input class="form-control" id="" type="text" placeholder="Exp Date"></th>
+      <th><input class="form-control" id="" type="text" placeholder="City"></th>
+      <th><input class="form-control" id="" type="text" placeholder="Availability"></th>
+    </tr>   
+    </table>
+    
+      
+    <table class="table" id="myTable">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Product</th>
+          <th scope="col">Category</th>
+          <th scope="col">Quantity</th>
+          <th scope="col">Exp Date</th>
+          <th scope="col">City</th>            
+          <th scope="col">Basket Buddy</th>
+          <th scope="col">Add to Basket</th>      
+          <th scope="col">Edit</th>              
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td data-toggle="collapse" data-target="#demo1" data-parent="#myTable"><a class="btn-link" href="#">Apple</a></td>
+          <td>Fruit and Veggies</td>
+          <td>3 kg</td>              
+          <td>12.01.2019.</td>
+          <td>Pula</td>            
+          <td>Liam</td>
+          <td><img src="images/in-basket-24px.svg" data-toggle="tooltip" data-placement="right" title="Product is in your basket"></td>              
+          <td><img src="images/edit-in-active-24px.svg"></td>              
+        </tr>
+        <tr id="demo1" class="collapse">
+            <td colspan="9" class="hiddenRow">
+              <div class="recipes">
+              <p>Suggested recipes:</p>
+              <ul>
+                <li><a href="https://www.bbcgoodfood.com/recipes/best-apple-crumble" target="_blank">Apple Crumble</a></li>
+                <li>Apple Pie</li>
+                <li>Apple Juice</li>
+              </ul>  
+              </div>
+            </td>
+        </tr>      
+        <tr>
+          <th scope="row">2</th>
+          <td data-toggle="collapse" data-target="#demo2" data-parent="#myTable"><a class="btn-link" href="#">Milk</a></td>
+          <td>Dairy</td>
+          <td>2 l</td>              
+          <td>05.02.2019.</td>
+          <td>Zagreb</td>            
+          <td>Tina G.</td>
+          <td><img src="images/not-available-24px.svg" data-toggle="tooltip" data-placement="right" title="Not Available"></td>
+          <td><img src="images/edit-in-active-24px.svg"></td>
+        </tr>
+         <tr id="demo2" class="collapse">
+            <td colspan="9" class="hiddenRow">
+              <div class="recipes">
+              <p>Suggested recipes:</p>
+              <ul>
+                <li><a href="hhttps://www.thekitchn.com/how-to-make-homemade-mozzarella-cooking-lessons-from-the-kitchn-174355" target="_blank">Homemade Fresh Mozzarella</a></li>
+                <li>Yogurt</li>
+                <li>Dulce de Leche</li>
+              </ul>  
+              </div>
+            </td>
+        </tr>       
+        <tr>
+          <th scope="row">3</th>
+          <td class="product" data-toggle="true">Cookies</td>
+          <td>Sweets and snacks</td>
+          <td>0.5 kg</td>              
+          <td>06.06.2019.</td>
+          <td>Rijeka</td>            
+          <td>Chris</td>
+          <td><img src="images/not-available-24px.svg" data-toggle="tooltip" data-placement="right" title="Not Available"></td>
+          <td><img src="images/edit-active-24px.svg"></td>           
+        </tr>         
+        <tr>
+          <th scope="row">4</th>
+          <td class="product">Cookies</td>
+          <td>Sweets and snacks</td>
+          <td>1.5 kg</td>              
+          <td>27.05.2019.</td>
+          <td>Zagreb</td>            
+          <td>Tony</td>          
+          <td><img src="images/available-24px.svg" data-toggle="tooltip" data-placement="right" title="Available"></td>
+          <td><img src="images/edit-in-active-24px.svg"></td>              
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td class="product">Carrot</td>
+          <td>Fruit and Veggies</td>
+          <td>5 kg</td>              
+          <td>06.03.2019.</td>
+          <td>Krapina</td>            
+          <td>Adam</td>         
+          <td><img src="images/in-basket-24px.svg" data-toggle="tooltip" data-placement="right" title="Product is in your basket"></td>
+          <td><img src="images/edit-in-active-24px.svg"></td>              
+        </tr>
+        <tr>
+          <th scope="row">6</th>
+          <td class="product">Orange</td>
+          <td>Fruit and Veggies</td>
+          <td>3 kg</td>              
+          <td>03.03.2019.</td>
+          <td>Rovinj</td>            
+          <td>Dino</td>         
+          <td><img src="images/available-24px.svg" data-toggle="tooltip" data-placement="right" title="Available"></td>
+          <td><img src="images/edit-in-active-24px.svg"></td>              
+        </tr>
+        <tr>
+          <th scope="row">7</th>
+          <td class="product">Yogurt</td>
+          <td>Dairy</td>
+          <td>2 pcs</td>              
+          <td>08.01.2019.</td>
+          <td>Karlovac</td>            
+          <td>Luna</td>         
+          <td><img src="images/available-24px.svg" data-toggle="tooltip" data-placement="right" title="Available"></td>
+          <td><img src="images/edit-in-active-24px.svg"></td>              
+        </tr>
+        <tr>
+          <th scope="row">8</th>
+          <td class="product">Carrot</td>
+          <td>Fruit and Veggies</td>
+          <td>12 kg</td>              
+          <td>01.03.2019.</td>
+          <td>Slavonski Brod</td>            
+          <td>Lea</td>         
+          <td><img src="images/available-24px.svg" data-toggle="tooltip" data-placement="right" title="Available"></td>
+          <td><img src="images/edit-in-active-24px.svg"></td>              
+        </tr>
+        <tr>
+          <th scope="row">9</th>
+          <td class="product">Chips</td>
+          <td>Sweets and snacks</td>
+          <td>4 pcs</td>              
+          <td>06.03.2019.</td>
+          <td>Rijeka</td>            
+          <td>Chris</td>         
+          <td><img src="images/not-available-24px.svg" data-toggle="tooltip" data-placement="right" title="Not Available"></td>
+          <td><img src="images/edit-active-24px.svg"></td>              
+        </tr>
+        <tr>
+          <th scope="row">10</th>
+          <td class="product">Paprika</td>
+          <td>Fruit and Veggies</td>
+          <td>10 kg</td>              
+          <td>06.03.2019.</td>
+          <td>Osijek</td>            
+          <td>Dean</td>         
+          <td><img src="images/available-24px.svg" data-toggle="tooltip" data-placement="right" title="Available"></td>
+          <td><img src="images/edit-in-active-24px.svg"></td>              
+        </tr>          
+      </tbody>
+    </table>
+    </div>
+
+  
+  </body>
+    
+</html>
