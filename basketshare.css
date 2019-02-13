@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box; /*border-box model is not affected by border thickness or padding*/
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin:0;
+  padding:0;
+  color: #333;  
+  outline: none;
+}
+
+.navbar {
+  opacity: 0.9;
+}
+
+.container {
+    margin-top: 50px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.icon{
+    padding: 10px;
+}
+
+
+/* FAQ */
+#accordion {
+    text-align: left;
+}
+
+.btn-link {
+    color: #669a0a;
+    text-decoration: none;    
+}
+
+
+.btn-link:hover {
+    color: #f3bf15;
+    text-decoration: none;
+}
+
+
+/* CAll to Action */
+
+.btn-get {
+    color: white;
+    background-color: #f3bf15;
+    text-transform: uppercase;
+    border: 0;
+}
+
+.btn-share {
+    color: white;
+    background-color: #669a0a;
+    text-transform: uppercase;
+    border: 0;    
+}
+
+.btn-get:hover, .btn-share:hover {
+    color: white;
+    background-color: #bababa;
+}
+
+.btn-get:active, .btn-share:active {
+    color: white;
+    background-color: #bababa;
+}
+
+.btn-get:focus, .btn-share:focus {
+    color: white;
+    background-color: #bababa;
+}
+
+
+/* Testimonials */
+h2 {
+	text-transform: uppercase;
+	font-weight: bold;
+	position: relative;
+	margin-bottom: 35px;
+}
+h2::after {
+	content: "";
+	width: 100px;
+	position: absolute;
+	margin: 0 auto;
+	height: 3px;
+	background: #f3bf15;
+	left: 0;
+	right: 0;
+	bottom: -10px;
+}
+
+.col-center {
+	margin: 0 auto;
+	float: none !important;
+}
+
+.profile-img {
+    width: 100px;
+    border-radius: 100px;
+    margin-bottom: 15px;
+}
+
+.carousel-item {
+    text-align: center;
+}
+
+.overview {
+    font-style: italic;
+}
+
+.carousel-indicators {
+    bottom: -40px;
+}
+
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 10px;
+	height: 10px;
+	margin: 1px 3px;
+	border-radius: 50%;
+}
+.carousel-indicators li {	
+	background: #bababa;
+	border-color: transparent;
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+.carousel-indicators li.active {	
+	background: #669a0a;		
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+
+/* Table */
+.available {
+    color: #669a0a;
+}
+
+.not-available {
+    color: #f3bf15;
+}
+
+/* Check out button*/
+.check-out {
+    text-align: right;
+}
+
+/* Share */
+.share {
+    text-align: left;
+}
+
+/* Recipes */
+.recipes {
+    text-align: left;
+}
